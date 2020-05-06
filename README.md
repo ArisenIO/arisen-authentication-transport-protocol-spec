@@ -1,11 +1,11 @@
-# EOSIO Authentication Transport Protocol Specification
-[![EOSIO Labs](https://img.shields.io/badge/EOSIO-Labs-5cb3ff.svg)](#about-eosio-labs)
+# ARISEN Authentication Transport Protocol Specification
+[![ARISEN Labs](https://img.shields.io/badge/ARISEN-Labs-5cb3ff.svg)](#about-arisen-labs)
 
 **Specification Version**: 0.0.1
 
 ## Challenge
 
-Mobile EOSIO wallets and app explorers restrict integrating app developers to a mobile web application form factor, and force users to access integrating apps within a blockchain-only browser. Most users expect native applications, or to access mobile web applications from their general purpose browser. 
+Mobile ARISEN wallets and app explorers restrict integrating app developers to a mobile web application form factor, and force users to access integrating apps within a blockchain-only browser. Most users expect native applications, or to access mobile web applications from their general purpose browser. 
 
 ## Overview
 
@@ -15,14 +15,14 @@ This specification provides a framework that wallet developers can use to respon
 
 This is just one of several thought leadership pieces focusing on wallets, key management and authentication, and the relating user experience. For more context and related reading, check out these these pieces:
 
-* [A Passwordless Future: Building Towards More Secure and Usable Authentication Systems](https://medium.com/eosio/a-passwordless-future-building-towards-more-secure-and-usable-authentication-systems-e188f07e4b87)
-* [EOSIO Labs™ Release: The Universal Authenticator Library (UAL) — Increasing the Accessibility of Blockchain Applications](https://medium.com/eosio/eosio-labs-release-the-universal-authenticator-library-ual-increasing-the-accessibility-of-8e2bd62a78a5)
-* [EOSIO Software Release: Ricardian Contract Specifications and the Ricardian Template Toolkit](https://medium.com/eosio/eosio-software-release-ricardian-contract-specifications-and-the-ricardian-template-toolkit-a0db787429d1)
-* [EOSIO Manifest Specification](https://github.com/EOSIO/manifest-spec)
+* [A Passwordless Future: Building Towards More Secure and Usable Authentication Systems](https://medium.com/arisen/a-passwordless-future-building-towards-more-secure-and-usable-authentication-systems-e188f07e4b87)
+* [ARISEN Labs™ Release: The Universal Authenticator Library (UAL) — Increasing the Accessibility of Blockchain Applications](https://medium.com/arisen/arisen-labs-release-the-universal-authenticator-library-ual-increasing-the-accessibility-of-8e2bd62a78a5)
+* [ARISEN Software Release: Ricardian Contract Specifications and the Ricardian Template Toolkit](https://medium.com/arisen/arisen-software-release-ricardian-contract-specifications-and-the-ricardian-template-toolkit-a0db787429d1)
+* [ARISEN Manifest Specification](https://github.com/ARISEN/manifest-spec)
 
-## About EOSIO Labs
+## About arisen Labs
 
-EOSIO Labs repositories are experimental.  Developers in the community are encouraged to use EOSIO Labs repositories as the basis for code and concepts to incorporate into their applications. Community members are also welcome to contribute and further develop these repositories. Since these repositories are not supported by Block.one, we may not provide responses to issue reports, pull requests, updates to functionality, or other requests from the community, and we encourage the community to take responsibility for these.
+ARISEN Labs repositories are experimental.  Developers in the community are encouraged to use ARISEN Labs repositories as the basis for code and concepts to incorporate into their applications. Community members are also welcome to contribute and further develop these repositories. Since these repositories are not supported by Block.one, we may not provide responses to issue reports, pull requests, updates to functionality, or other requests from the community, and we encourage the community to take responsibility for these.
 
 ## **Transports**
 ### Request Transports
@@ -185,7 +185,7 @@ The following example demonstrates various request formats all in one envelope. 
           "type": "urlHashFragmentIdentifier",
           "actions": [
             {
-              "contract": "eosio.token",
+              "contract": "arisen.token",
               "action": "transfer"
             },
             {
@@ -213,7 +213,7 @@ The following example demonstrates various request formats all in one envelope. 
       ],
       "abis": [
         {
-          "accountName": "eosio.token",
+          "accountName": "arisen.token",
           "abi": "{ABI_STRING}"
         }
       ],
@@ -380,6 +380,6 @@ Not all error codes will be supported by all authenticators.
 
 ## Important
 
-See LICENSE for copyright and license terms.  Block.one makes its contribution on a voluntary basis as a member of the EOSIO community and is not responsible for ensuring the overall performance of the software or any related applications.  We make no representation, warranty, guarantee or undertaking in respect of the software or any related documentation, whether expressed or implied, including but not limited to the warranties of merchantability, fitness for a particular purpose and noninfringement. In no event shall we be liable for any claim, damages or other liability, whether in an action of contract, tort or otherwise, arising from, out of or in connection with the software or documentation or the use or other dealings in the software or documentation. Any test results or performance figures are indicative and will not reflect performance under all conditions.  Any reference to any third party or third-party product, service or other resource is not an endorsement or recommendation by Block.one.  We are not responsible, and disclaim any and all responsibility and liability, for your use of or reliance on any of these resources. Third-party resources may be updated, changed or terminated at any time, so the information here may be out of date or inaccurate.  Any person using or offering this software in connection with providing software, goods or services to third parties shall advise such third parties of these license terms, disclaimers and exclusions of liability.  Block.one, EOSIO, EOSIO Labs, EOS, the heptahedron and associated logos are trademarks of Block.one.
+See LICENSE for copyright and license terms.  Block.one makes its contribution on a voluntary basis as a member of the arisen community and is not responsible for ensuring the overall performance of the software or any related applications.  We make no representation, warranty, guarantee or undertaking in respect of the software or any related documentation, whether expressed or implied, including but not limited to the warranties of merchantability, fitness for a particular purpose and noninfringement. In no event shall we be liable for any claim, damages or other liability, whether in an action of contract, tort or otherwise, arising from, out of or in connection with the software or documentation or the use or other dealings in the software or documentation. Any test results or performance figures are indicative and will not reflect performance under all conditions.  Any reference to any third party or third-party product, service or other resource is not an endorsement or recommendation by Block.one.  We are not responsible, and disclaim any and all responsibility and liability, for your use of or reliance on any of these resources. Third-party resources may be updated, changed or terminated at any time, so the information here may be out of date or inaccurate.  Any person using or offering this software in connection with providing software, goods or services to third parties shall advise such third parties of these license terms, disclaimers and exclusions of liability.  Block.one, arisen, arisen Labs, EOS, the heptahedron and associated logos are trademarks of Block.one.
 
 Wallets and related components are complex software that require the highest levels of security.  If incorrectly built or used, they may compromise users’ private keys and digital assets. Wallet applications and related components should undergo thorough security evaluations before being used.  Only experienced developers should work with this software.
